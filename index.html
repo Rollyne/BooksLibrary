@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link type="text/css" rel="stylesheet" href="index.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+    <header id="menu">
+        <a href="#" id="linkHome">Home</a>
+        <a href="#" id="linkLogin">Login</a>
+        <a href="#" id="linkRegister">Register</a>
+        <a href="#" id="linkListBooks">List Books</a>
+        <a href="#" id="linkCreateBook">Create Book</a>
+        <a href="#" id="linkLogout">Logout</a>
+    </header>
+
+
+    <main>
+        <section id="loadingBox">Loading...</section>
+        <section id="errorBox" onclick="$(this).fadeOut()">Error</section>
+        <section id="infoBox" onclick="$(this).fadeOut()">Info</section>
+        <section id="viewHome">
+            <h3>Welcome to Books Library</h3>
+            <p>Bacon ipsum dolor amet pork chop venison rump tempor chicken deserunt, flank nostrud brisket jowl minim sirloin hamburger laboris. Exercitation cupidatat aliquip jowl laborum andouille consectetur ex dolore sirloin. Beef ribs velit culpa tri-tip. Officia in filet mignon, deserunt velit t-bone magna doner capicola laboris aute consectetur pastrami.</p>
+        </section>
+        <section id="viewLogin">
+            <h3>Please Login</h3>
+            <form id="formLogin">
+                <div>Username:</div>
+                <div><input type="text" id="loginUser" required /></div>
+                <div>Password:</div>
+                <div><input type="password" id="loginPass" name="password" required /></div>
+                <div><input type="submit" value="Login" /></div>
+            </form>
+        </section>
+        <section id="viewRegister">
+            <h3>Please Register</h3>
+            <form id="formRegister">
+                <div>Username:</div>
+                <div><input type="text" id="registerUser" required /></div>
+                <div>Password:</div>
+                <div><input type="password" id="registerPass" name="password" required /></div>
+                <div><input type="submit" value="Register" /></div>
+            </form>
+        </section>
+        <section id="viewBooks">
+            <h3>Books</h3>
+            <div id="books"></div>
+        </section>
+        <section id="viewCreateBook">
+            <h3>Create new book</h3>
+            <form id="formCreateBook">
+                <div>Title</div>
+                <div><input type="text" id="bookTitle" required /></div>
+                <div>Author:</div>
+                <div><input type="text" id="bookAuthor" required /></div>
+                <div>Description:</div>
+                <div><textarea id="bookDescription" rows="10" required></textarea></div>
+                <div><input type="submit" value="Create" /></div>
+            </form>
+        </section>
+    </main>
+
+
+    <footer id="global">
+        (c) I'mTryingSomeShit Productions - Sample Project
+    </footer>
+</body>
+</html>
